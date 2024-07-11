@@ -25,16 +25,40 @@
                     <img src="./img/bife.jpg" alt="Bife com batata" class="img-responsive" width="200" height="300">
                     <p>Bife com batata</p>
                     <h5 class="preco">R$ 30,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
                 <div class="card">
                     <img src="./img/coxa.jpg" alt="Coxa de Frango" class="img-responsive" width="200" height="300">
-                    <p>Torresmo</p>
+                    <p>Coxa de Frango</p>
                     <h5 class="preco">R$ 25,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
                 <div class="card">
                     <img src="./img/panela.jpg" alt="Carne de panela" class="img-responsive" width="200" height="300">
                     <p>Carne de Panela</p>
                     <h5 class="preco">R$ 22,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
             </div>
         </div>        
@@ -48,16 +72,40 @@
                     <img src="./img/farofa.jpg" alt="Farofa" class="img-responsive" width="200" height="300">
                     <p>Farofa</p>
                     <h5 class="preco">R$ 10,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
                 <div class="card">
                     <img src="./img/salad.jpg" alt="Salada" class="img-responsive" width="200" height="300">
                     <p>Salada</p>
                     <h5 class="preco">R$ 8,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
                 <div class="card">
                     <img src="./img/torresmo.jpg" alt="Torresmo" class="img-responsive" width="200" height="300">
                     <p>Torresmo</p>
                     <h5 class="preco">R$ 12,00</h5>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -67,17 +115,26 @@
             </div>
             <form>
                 <div class="mb-3">
-                  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                  <input type="name" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Nome">
                 </div>
                 <div class="mb-3">
-                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="WhatsApp">
+                    <input type="text" class="form-control" id="wpp" aria-describedby="emailHelp" placeholder="WhatsApp">
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
                 </div>
             </form>
         </div>
-        <button type="submit" class="btn btn-primary">Calcular</button>
+        <button type="submit" class="btn btn-primary" onclick="calc()">Calcular</button>
+        <div id="output">
+            
+        </div>
+        <div></div>
     </div>
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/quantity.js"> </script>
+    <script src="js/jquery.mask.min.js"> </script>
+    <script src="js/javascript.js"></script>
+    
 </body>
 </html>
